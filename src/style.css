@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f2e41;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 71px;
+}
+
+.title-nav {
+  display: flex;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  gap: 2px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 64px;
+
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 77px;
+
+  margin-top: 107px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text h1 {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 59px;
+  width: 609px;
+}
+
+.main-text span {
+  color: #00bfa6;
+}
+
+.main-text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  text-align: center;
+
+  color: #c2c2c2;
+
+  width: 604px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 260px;
+}
+
+.divider {
+  width: 650px;
+  border: 1px solid #00bfa6;
+}
+
+footer p {
+  margin-top: 48px;
+
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+}
+
+footer p a {
+  color: #ffffff;
+}
+
+.padlock-footer {
+  position: absolute;
+  left: 1%;
+  top: 92%;
+}
+
+@media only screen and (max-width: 912px) {
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .main-text h1 {
+    width: 400px;
+  }
+
+  .main-text p {
+    width: 400px;
+  }
+
+  footer {
+    margin-top: 52px;
+  }
+
+  .divider {
+    width: 60%;
+  }
+
+  .padlock-footer {
+    top: 136%;
+  }
+}
